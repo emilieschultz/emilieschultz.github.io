@@ -1,0 +1,57 @@
+#wrapper {
+    background-color: indianred;
+    margin: 0 auto;
+    max-width: 960px;
+}
+
+
+header {
+    border: 3px solid black;
+    background: orange;
+    margin-bottom: 20px;
+}
+
+p {
+    text-align: center;
+}
+
+nav#main-nav {
+    display: inline-block;
+    background-color: aqua;
+    min-height: 300px;
+    width: 20%;
+    vertical-align: top;
+}
+
+
+#section1 {
+    display: inline-block;
+    background: purple;
+    width: 77%;
+    margin-left: 16px;
+    height: 500px;
+    
+    vertical-align: top;
+}
+
+
+#section2 {
+    
+    background: purple;
+    width: 740px;
+    margin-left: 220px;
+    margin-top: 20px;
+    height: 200px;
+    vertical-align: 
+
+    
+    
+}
+footer{
+    
+    margin: 10px 0px;
+    border: 3px solid black;
+    background: orange;
+    
+}
+
