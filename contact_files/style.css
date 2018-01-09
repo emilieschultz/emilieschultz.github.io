@@ -82,7 +82,27 @@ html {
     color: white;
 }
 
-.section {
+
+.about-box {
+    background-color: #F08080;
+    position: fixed;
+    right: 50%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.about-box-title {
+    font-family: 'Marck Script', cursive, sans-serif;
+    text-align: center;
+    color: white;
+    font-size: 3em;
+}
+
+#cv {
     background-color: #282828;
     /*    display : inline-block; */
     padding-left: 50%;
@@ -90,9 +110,8 @@ html {
     margin: 0;
 }
 
-.section .section-inner {
+#cv .cv-inner {
     padding: 40px;
-    text-align: justify;
 }
 
 .back-button {
@@ -120,30 +139,7 @@ html {
     color: #282828;
 }
 
-#travaux {
-    background-color: #282828;
-    /*    display : inline-block; */
-    padding-left: 50%;
-    color: white;
-    margin: 0;
-}
-
-
-.travaux-inner .travaux-inner-title {
-    font-family: 'Marck Script', cursive, sans-serif;
-    text-align: center;
-    color: white;
-    font-size: 3em;
-    margin: 30px;
-}
-
-
-.image-photoshop-illustrator {
-    max-width: 200px;
-    margin: 10px;
-}
-
-.box {
+.work-box {
     background-color: #F08080;
     position: fixed;
     right: 50%;
@@ -155,9 +151,36 @@ html {
     align-items: center
 }
 
-.box-title {
+.work-title {
     font-family: 'Marck Script', cursive, sans-serif;
     text-align: center;
     color: white;
     font-size: 3em;
+}
+
+
+#travaux {
+    background-color: #282828;
+    /*    display : inline-block; */
+    padding-left: 50%;
+    color: white;
+    margin: 0;
+}
+
+.travaux-inner {
+    margin: auto;
+}
+
+.travaux-inner-title {
+    font-family: 'Marck Script', cursive, sans-serif;
+    text-align: center;
+    color: white;
+    font-size: 3em;
+    margin: 30px;
+}
+
+
+.image-photoshop-illustrator {
+    max-width: 200px;
+    margin: 10px;
 }
