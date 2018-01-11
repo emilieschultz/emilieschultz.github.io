@@ -95,6 +95,27 @@ html {
     text-align: justify;
 }
 
+.p-about {
+    font-family: sans-serif;
+    font-size: 1em
+}
+
+.list {
+    font-size: 1em
+}
+
+.strong-about {
+    color: #F08080;
+    font-size: 1.3em;
+}
+
+.profil-image {
+    position: absolute;
+    max-width: 10%;
+    top: 10%;
+    left: 37%
+}
+
 .back-button {
     position: fixed;
     top: 10px;
@@ -160,4 +181,22 @@ html {
     text-align: center;
     color: white;
     font-size: 3em;
+}
+
+.a-mail {
+    text-decoration: underline;
+    color: #F08080;
+}
+
+.twitter {
+    position: absolute;
+    max-width: 6%;
+    bottom: 10%
+}
+
+.linkedin {
+    position: absolute;
+    max-width: 6%;
+    bottom: 10%;
+    left: 62%
 }
