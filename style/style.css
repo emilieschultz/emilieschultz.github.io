@@ -1,202 +1,38 @@
-@font-face {
-    font-family: 'caviar_dreamsitalic';
-    src: url('../font/CaviarDreams_Italic-webfont.eot');
-    src: url('../font/CaviarDreams_Italic-webfont.eot?#iefix') format('embedded-opentype'),
-    url('../font/CaviarDreams_Italic-webfont.woff') format('woff'),
-    url('../font/CaviarDreams_Italic-webfont.ttf') format('truetype'),
-    url('../font/CaviarDreams_Italic-webfont.svg#caviar_dreamsitalic') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-
-body,
-html {
-    background-color: #282828;
-    color: white;
-    height: 100%;
-}
-
-#wrapper {
-    /*    background-color: indianred;*/
-    margin: 0 auto;
-    max-width: 960px;
-    text-align: center;
-    color: #F08080;
-    justify-content: space-between;
-    align-items: center;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
-.home-image {
-    width: 200px;
-}
-
-@media screen and (max-width: 640px) {
-    .home-image {
-        width: 200px;
-    }
-}
-
+.page-home {
+  background: white;
+  margin: 20px; }
+  .page-home a:hover {
+    color: white; }
 
 .home-nav ul {
-    list-style: none;
-    padding-bottom: 30px;
-
-}
-
-.home-nav li {
+  list-style: none;
+  padding-bottom: 30px; }
+  .home-nav ul li {
     display: inline;
-    padding: 50px;
-
-}
-
-.home-nav a {
-    color: #F08080;
-    font-family: 'Marck Script', cursive, sans-serif;
-    text-decoration: none;
-    width: 100px;
-    font-size: 1.8em;
-}
-
-.page-home a:hover {
-    color: white;
-}
-
-.home-image-wrapper {
-    position: relative;
-    width: 100%;
-}
-
-.page-home h1 {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 50%;
-    margin-top: -24px;
-    padding: 0;
-    font-family: 'Marck Script', cursive, sans-serif;
-    font-size: 4em;
-    color: white;
-}
-
-.section {
-    background-color: #282828;
-    /*    display : inline-block; */
-    padding-left: 50%;
-    color: white;
-    margin: 0;
-}
-
-.section .section-inner {
-    padding: 40px;
-    text-align: justify;
-}
-
-.p-about {
-    font-family: sans-serif;
-    font-size: 1em
-}
-
-.list {
-    font-size: 1em
-}
-
-.strong-about {
-    color: #F08080;
-    font-size: 1.3em;
-}
-
-.profil-image {
-    position: absolute;
-    max-width: 10%;
-    top: 10%;
-    left: 37%
-}
+    padding: 50px; }
+    .home-nav ul li a {
+      color: #F08080;
+      font-family: 'Marck Script', cursive, sans-serif;
+      text-decoration: none;
+      width: 200px;
+      font-size: 1.8em; }
 
 .back-button {
-    position: fixed;
-    top: 10px;
-    left: 30px;
-    color: white;
-    font-size: 2.4em;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-}
-
-.back-button i {
-    margin: 10px;
-}
-
-.back-button span {
+  position: fixed;
+  top: 10px;
+  left: 30px;
+  color: white;
+  font-size: 2.4em;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; }
+  .back-button i {
+    margin: 10px; }
+  .back-button span {
     font-size: 1.8rem;
-    display: none;
-}
+    display: none; }
+  .back-button:hover {
+    color: #282828; }
 
-.back-button:hover {
-    color: #282828;
-}
-
-#travaux {
-    background-color: #282828;
-    /*    display : inline-block; */
-    padding-left: 50%;
-    color: white;
-    margin: 0;
-}
-
-
-.travaux-inner .travaux-inner-title {
-    font-family: 'Marck Script', cursive, sans-serif;
-    text-align: center;
-    color: white;
-    font-size: 3em;
-    margin: 30px;
-}
-
-
-.image-photoshop-illustrator {
-    max-width: 200px;
-    margin: 10px;
-}
-
-.box {
-    background-color: #F08080;
-    position: fixed;
-    right: 50%;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center
-}
-
-.box-title {
-    font-family: 'Marck Script', cursive, sans-serif;
-    text-align: center;
-    color: white;
-    font-size: 3em;
-}
-
-.a-mail {
-    text-decoration: underline;
-    color: #F08080;
-}
-
-.twitter {
-    position: absolute;
-    max-width: 6%;
-    bottom: 10%
-}
-
-.linkedin {
-    position: absolute;
-    max-width: 6%;
-    bottom: 10%;
-    left: 62%
-}
+/*# sourceMappingURL=style.css.map */
