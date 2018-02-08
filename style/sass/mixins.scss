@@ -2,7 +2,7 @@
     border: solid 2px $color;
 }
 
-@mixin link-animated($color, $hoverColor) {
+@mixin link-animated($color) {
 
     text-decoration: none;
     color: $color;
