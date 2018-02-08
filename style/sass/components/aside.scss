@@ -34,7 +34,31 @@
         }
     }
 
+    .aside-nav {
+        //        background: green;
+        text-align: center;
+
+        ul {
+            list-style: none;
+            padding: 15px 0;
+        }
+
+        li {
+            margin: 20px 0;
+        }
+        a {
+            text-decoration: none;
+            width: 100px;
+            @include link-animated(black, #333);
+
+            &:hover {}
+
+        }
+    }
+
     .aside-bottom {
         background: blue;
+
+
     }
 }

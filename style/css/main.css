@@ -1,6 +1,9 @@
 html {
   font-size: 12px; }
 
+body {
+  -webkit-font-smoothing: antialiased; }
+
 #content {
   background: #ff9999; }
   @media screen and (min-width: 550px) {
@@ -50,6 +53,53 @@ html {
     font-size: 1.5rem;
     padding: 0;
     font-weight: bold; }
+  #aside .aside-nav {
+    text-align: center; }
+    #aside .aside-nav ul {
+      list-style: none;
+      padding: 15px 0; }
+    #aside .aside-nav li {
+      margin: 20px 0; }
+    #aside .aside-nav a {
+      text-decoration: none;
+      width: 100px;
+      text-decoration: none;
+      color: black;
+      position: relative;
+      padding: 16px 7px;
+      border-top: 2px solid rgba(255, 255, 255, 0);
+      border-bottom: 2px solid rgba(255, 255, 255, 0);
+      transition: padding .3s, border-color .3s; }
+      #aside .aside-nav a:focus, #aside .aside-nav a:hover {
+        padding: 5px 7px;
+        border-color: black;
+        outline: none; }
+      #aside .aside-nav a::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        max-height: 0;
+        color: rgba(255, 255, 255, 0);
+        border-left: 2px solid rgba(255, 255, 255, 0);
+        content: attr(data-text);
+        transition: max-height .3s, border-color 0s; }
+      #aside .aside-nav a::after {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        padding: 5px;
+        max-height: 0;
+        color: rgba(255, 255, 255, 0);
+        border-right: 2px solid rgba(255, 255, 255, 0);
+        content: attr(data-text);
+        transition: max-height .3s, border-color 0s; }
+      #aside .aside-nav a:focus::before, #aside .aside-nav a:hover::before, #aside .aside-nav a:focus::after, #aside .aside-nav a:hover::after {
+        max-height: 100%;
+        transition-delay: .28s;
+        border-color: black; }
   #aside .aside-bottom {
     background: blue; }
 
