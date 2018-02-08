@@ -1,0 +1,11 @@
+html {
+    font-size: 12px;
+}
+
+#content {
+    background: $content-bg-color;
+
+    @media screen and (min-width: $mobile-width) {
+        padding-left: $aside-width;
+    }
+}

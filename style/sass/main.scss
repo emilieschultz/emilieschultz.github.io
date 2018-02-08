@@ -1,9 +1,11 @@
 @import "variables";
 @import "mixins";
 
+@import "pages/layout";
 @import "pages/contact";
 @import "pages/home";
 @import "pages/work";
 
-@import "components/nav";
+@import "components/banner-aside";
 @import "components/back-button";
+@import "components/aside";

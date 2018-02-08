@@ -1,4 +1,18 @@
+$blue: blue;
+$green: green;
+$yellow: yellow;
+$red: red;
+$gray: gray;
+$light-gray: gray;
+
 $theme-color: red;
 $font-size-large: 30px;
 $font-size-medium: 20px;
 $font-size-tiny: 10px;
+
+$content-bg-color: lighten($red, 30);
+
+$aside-width: 220px;
+$aside-bg-color: lighten($gray, 40);
+
+$mobile-width: 550px;

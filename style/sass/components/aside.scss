@@ -1,0 +1,40 @@
+#aside {
+    background: $aside-bg-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @media screen and (min-width: $mobile-width) {
+        width: $aside-width;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+    }
+
+    .aside-top {
+
+        .aside-top-figure {
+            text-align: center;
+            padding-top: 20px;
+        }
+
+        .aside-top-figure-img {
+            width: 100%;
+            border-radius: 50%;
+            height: $aside-width - 50px;
+            width: $aside-width - 50px;
+        }
+
+        .aside-top-title {
+            text-align: center;
+            font-size: 1.5rem;
+            padding: 0;
+            font-weight: bold;
+        }
+    }
+
+    .aside-bottom {
+        background: blue;
+    }
+}
