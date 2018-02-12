@@ -1,0 +1,19 @@
+.slider {
+    width: 600px;
+    margin: 0 auto;
+
+    .slick-next,
+    .slick-prev {
+        &::before {
+            color: black;
+        }
+    }
+    &.slider-for {
+        a {
+            img {
+                margin: 0 auto;
+                height: 400px;
+            }
+        }
+    }
+}

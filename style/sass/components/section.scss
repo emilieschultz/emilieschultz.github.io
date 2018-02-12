@@ -1,0 +1,50 @@
+.section {
+    padding: 50px 0;
+
+    &#section-work {
+
+        .section-content {
+
+            padding: 40px;
+        }
+
+        .section-column {
+
+            a {
+                img {
+                    width: 100%;
+                    padding: 20px;
+
+                }
+            }
+        }
+    }
+
+    &#section-contact {
+
+        .text-contact {
+            padding: 80px;
+
+            .contact-mail {
+                text-decoration: none;
+                background-color: lightgreen;
+                border-radius: 10%;
+            }
+        }
+    }
+
+    &#section-about {
+        .p-about {
+            text-align: justify;
+            left: 0;
+
+
+            .strong-about {
+                display: block;
+                margin-bottom: 20px;
+
+                text-align: center;
+            }
+        }
+    }
+}

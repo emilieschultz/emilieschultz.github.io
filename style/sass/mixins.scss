@@ -14,7 +14,8 @@
 
 
     &:focus,
-    &:hover {
+    &:hover,
+    &.active {
         padding: 5px 7px;
         border-color: $color;
         outline: none;
@@ -48,6 +49,8 @@
 
     &:focus::before,
     &:hover::before,
+    &.active::before,
+    &.active::after,
     &:focus::after,
     &:hover::after {
         max-height: 100%;

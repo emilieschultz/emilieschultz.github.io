@@ -1,1 +1,61 @@
+@keyframes imgHomeAnimation {
+    0% {
+        right: 300px;
+    } //    20% {
+    //        right: 150px;
+    //    }
+    //
+    //    40% {
+    //        right: 100px;
+    //    }
+    //
+    //    60% {
+    //        right: 50px;
+    //    }
+    //
+    //    80% {
+    //        right: 0px;
+    //    }
+    100% {
+        top: -60px;
+        right: -50px;
+    }
+}
 
+
+.page-home {
+
+
+    .jumbotron {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 1600px;
+
+
+        p {
+            text-align: center;
+            color: grey;
+            font-size: 2em;
+            display: none;
+            border-radius: 5px;
+            padding: 10px;
+            z-index: 2;
+            margin-left: -$aside-width;
+        }
+    }
+
+    .home-img {
+        position: absolute;
+        display: none;
+        right: 0;
+        z-index: 1;
+        width: 600px;
+
+        &.animate {
+            animation: imgHomeAnimation 3s forwards;
+            display: block;
+        }
+    }
+
+}
