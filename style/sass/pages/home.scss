@@ -22,26 +22,35 @@
     }
 }
 
-
 .page-home {
-
-
     .jumbotron {
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 1600px;
-
 
         p {
             text-align: center;
-            color: grey;
-            font-size: 2em;
+            color: #555;
+            font-size: 1.2em;
             display: none;
             border-radius: 5px;
             padding: 10px;
             z-index: 2;
-            margin-left: -$aside-width;
+
+            @media screen and (min-width: $mobile-width) {
+                margin-left: -$aside-width;
+            }
+            @media screen and (min-width: $small-width) {
+                font-size: 1.3em;
+            }
+            @media screen and (min-width: $medium-width) {
+                font-size: 1.4em;
+            }
+        }
+
+        @media screen and (max-width: $mobile-width) {
+            padding-top: 40px;
+            display: block;
         }
     }
 
@@ -50,11 +59,26 @@
         display: none;
         right: 0;
         z-index: 1;
-        width: 600px;
+        width: 200px;
+
+        @media screen and (min-width: $mobile-width) {
+            width: 300px;
+        }
+        @media screen and (min-width: $small-width) {
+            width: 400px;
+        }
+        @media screen and (min-width: $medium-width) {
+            width: 500px;
+        }
+        @media screen and (min-width: $large-width) {
+            width: 600px;
+        }
 
         &.animate {
             animation: imgHomeAnimation 3s forwards;
-            display: block;
+            display: inline;
+
+
         }
     }
 

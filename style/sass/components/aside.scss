@@ -16,14 +16,21 @@
 
         .aside-top-figure {
             text-align: center;
-            padding-top: 20px;
+            margin: 0;
         }
 
         .aside-top-figure-img {
-            width: 100%;
             border-radius: 50%;
             height: $aside-width - 50px;
             width: $aside-width - 50px;
+
+            @media screen and (max-width: $mobile-width) {
+                width: 70px;
+                height: 70px;
+            }
+            @media screen and (min-width: $mobile-width) {
+                margin: 20px 0;
+            }
         }
 
         .aside-top-title {
@@ -32,11 +39,22 @@
             padding: 0;
             font-weight: bold;
             color: $aside-color;
+
+            @media screen and (max-width: $mobile-width) {
+                padding: 0 10px;
+            }
+        }
+
+        @media screen and (max-width: $mobile-width) {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 10px;
         }
     }
 
     .aside-nav {
-        //        background: green;
         text-align: center;
 
         ul {
@@ -54,6 +72,11 @@
 
             &:hover {}
         }
+
+        @media screen and (max-width: $mobile-width) {
+            display: none;
+        }
+
     }
 
     .aside-bottom {
@@ -91,7 +114,10 @@
                 background: #007bb5;
                 color: white;
             }
+        }
 
+        @media screen and (max-width: $mobile-width) {
+            display: none;
         }
 
     }

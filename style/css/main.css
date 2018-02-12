@@ -2,16 +2,21 @@ html {
   font-size: 12px; }
 
 body {
-  -webkit-font-smoothing: antialiased; }
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden; }
+
+html,
+body {
+  overflow-x: hidden; }
+
+.wrapper {
+  overflow-x: hidden; }
 
 #content {
   background: white; }
-  @media screen and (min-width: 550px) {
+  @media screen and (min-width: 540px) {
     #content {
       padding-left: 220px; } }
-
-.section-contact .text-contact {
-  margin: auto; }
 
 @keyframes imgHomeAnimation {
   0% {
@@ -22,26 +27,49 @@ body {
 .page-home .jumbotron {
   display: flex;
   align-items: center;
-  justify-content: center;
-  height: 1600px; }
+  justify-content: center; }
   .page-home .jumbotron p {
     text-align: center;
-    color: grey;
-    font-size: 2em;
+    color: #555;
+    font-size: 1.2em;
     display: none;
     border-radius: 5px;
     padding: 10px;
-    z-index: 2;
-    margin-left: -220px; }
+    z-index: 2; }
+    @media screen and (min-width: 540px) {
+      .page-home .jumbotron p {
+        margin-left: -220px; } }
+    @media screen and (min-width: 720px) {
+      .page-home .jumbotron p {
+        font-size: 1.3em; } }
+    @media screen and (min-width: 960px) {
+      .page-home .jumbotron p {
+        font-size: 1.4em; } }
+  @media screen and (max-width: 540px) {
+    .page-home .jumbotron {
+      padding-top: 40px;
+      display: block; } }
 .page-home .home-img {
   position: absolute;
   display: none;
   right: 0;
   z-index: 1;
-  width: 600px; }
+  width: 200px; }
+  @media screen and (min-width: 540px) {
+    .page-home .home-img {
+      width: 300px; } }
+  @media screen and (min-width: 720px) {
+    .page-home .home-img {
+      width: 400px; } }
+  @media screen and (min-width: 960px) {
+    .page-home .home-img {
+      width: 500px; } }
+  @media screen and (min-width: 1140px) {
+    .page-home .home-img {
+      width: 600px; } }
   .page-home .home-img.animate {
     animation: imgHomeAnimation 3s forwards;
-    display: block; }
+    display: inline; }
 
 .back-button {
   position: fixed;
@@ -63,9 +91,9 @@ body {
 
 .section {
   padding: 50px 0; }
-  .section#section-work .section-content {
+  .section .section-content {
     padding: 40px; }
-  .section#section-work .section-column a img {
+  .section .section-column a img {
     width: 100%;
     padding: 20px; }
   .section#section-contact .text-contact {
@@ -76,10 +104,11 @@ body {
       border-radius: 10%; }
   .section#section-about .p-about {
     text-align: justify;
+    margin: 20px;
     left: 0; }
     .section#section-about .p-about .strong-about {
       display: block;
-      margin-bottom: 20px;
+      margin: 20px 0;
       text-align: center; }
 
 #aside {
@@ -87,7 +116,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between; }
-  @media screen and (min-width: 550px) {
+  @media screen and (min-width: 540px) {
     #aside {
       width: 220px;
       position: fixed;
@@ -96,18 +125,34 @@ body {
       left: 0; } }
   #aside .aside-top .aside-top-figure {
     text-align: center;
-    padding-top: 20px; }
+    margin: 0; }
   #aside .aside-top .aside-top-figure-img {
-    width: 100%;
     border-radius: 50%;
     height: 170px;
     width: 170px; }
+    @media screen and (max-width: 540px) {
+      #aside .aside-top .aside-top-figure-img {
+        width: 70px;
+        height: 70px; } }
+    @media screen and (min-width: 540px) {
+      #aside .aside-top .aside-top-figure-img {
+        margin: 20px 0; } }
   #aside .aside-top .aside-top-title {
     text-align: center;
     font-size: 1.7rem;
     padding: 0;
     font-weight: bold;
     color: black; }
+    @media screen and (max-width: 540px) {
+      #aside .aside-top .aside-top-title {
+        padding: 0 10px; } }
+  @media screen and (max-width: 540px) {
+    #aside .aside-top {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 10px; } }
   #aside .aside-nav {
     text-align: center; }
     #aside .aside-nav ul {
@@ -155,6 +200,9 @@ body {
         max-height: 100%;
         transition-delay: .28s;
         border-color: black; }
+    @media screen and (max-width: 540px) {
+      #aside .aside-nav {
+        display: none; } }
   #aside .aside-bottom {
     display: flex;
     flex-direction: row;
@@ -181,6 +229,9 @@ body {
       #aside .aside-bottom a.fa-linkedin:hover {
         background: #007bb5;
         color: white; }
+    @media screen and (max-width: 540px) {
+      #aside .aside-bottom {
+        display: none; } }
 
 .slider {
   width: 600px;

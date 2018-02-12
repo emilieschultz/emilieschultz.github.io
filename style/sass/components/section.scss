@@ -1,24 +1,23 @@
 .section {
     padding: 50px 0;
 
-    &#section-work {
+    .section-content {
 
-        .section-content {
+        padding: 40px;
+    }
 
-            padding: 40px;
-        }
+    .section-column {
 
-        .section-column {
+        a {
+            img {
+                width: 100%;
+                padding: 20px;
 
-            a {
-                img {
-                    width: 100%;
-                    padding: 20px;
-
-                }
             }
         }
     }
+
+    &#section-work {}
 
     &#section-contact {
 
@@ -36,12 +35,13 @@
     &#section-about {
         .p-about {
             text-align: justify;
+            margin: 20px;
             left: 0;
 
 
             .strong-about {
                 display: block;
-                margin-bottom: 20px;
+                margin: 20px 0;
 
                 text-align: center;
             }
