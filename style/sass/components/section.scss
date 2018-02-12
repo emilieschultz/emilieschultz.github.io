@@ -55,5 +55,17 @@
                 text-align: center;
             }
         }
+
+        .passion-bottom {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            margin: 40px;
+            font-size: 4em;
+
+            @media screen and (max-width: $mobile-width) {
+                margin: 10px;
+            }
+        }
     }
 }

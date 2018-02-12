@@ -130,6 +130,15 @@ body {
       display: block;
       margin: 20px 0;
       text-align: center; }
+  .section#section-about .passion-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 40px;
+    font-size: 4em; }
+    @media screen and (max-width: 540px) {
+      .section#section-about .passion-bottom {
+        margin: 10px; } }
 
 #aside {
   background: white;
@@ -257,7 +266,7 @@ body {
     height: 34px;
     text-align: center;
     line-height: 35px; }
-    .socials a.fa-facebook:hover {
+    .socials a.fa-facebook-f:hover {
       background: #3B5998;
       color: white; }
     .socials a.fa-twitter:hover {
@@ -266,7 +275,7 @@ body {
     .socials a.fa-instagram:hover {
       background: #ff6666;
       color: white; }
-    .socials a.fa-linkedin:hover {
+    .socials a.fa-linkedin-in:hover {
       background: #007bb5;
       color: white; }
 
