@@ -47,7 +47,8 @@ body {
         font-size: 1.4em; } }
   @media screen and (max-width: 540px) {
     .page-home .jumbotron {
-      padding-top: 40px;
+      padding-top: 240px;
+      padding-bottom: 30px;
       display: block; } }
 .page-home .home-img {
   position: absolute;
@@ -55,6 +56,12 @@ body {
   right: 0;
   z-index: 1;
   width: 200px; }
+  @media screen and (max-width: 540px) {
+    .page-home .home-img {
+      display: block;
+      top: 80px !important;
+      right: 50%;
+      margin-right: -100px; } }
   @media screen and (min-width: 540px) {
     .page-home .home-img {
       width: 300px; } }
@@ -67,9 +74,10 @@ body {
   @media screen and (min-width: 1140px) {
     .page-home .home-img {
       width: 600px; } }
-  .page-home .home-img.animate {
-    animation: imgHomeAnimation 3s forwards;
-    display: inline; }
+  @media screen and (min-width: 540px) {
+    .page-home .home-img.animate {
+      animation: imgHomeAnimation 3s forwards;
+      display: inline; } }
 @media screen and (min-width: 540px) {
   .page-home .section-content .socials {
     display: none; } }
