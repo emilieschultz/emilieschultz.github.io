@@ -82,4 +82,12 @@
         }
     }
 
+    .section-content {
+        .socials {
+            @media screen and (min-width: $mobile-width) {
+                display: none;
+            }
+        }
+    }
+
 }

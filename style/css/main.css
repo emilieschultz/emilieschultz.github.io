@@ -70,6 +70,9 @@ body {
   .page-home .home-img.animate {
     animation: imgHomeAnimation 3s forwards;
     display: inline; }
+@media screen and (min-width: 540px) {
+  .page-home .section-content .socials {
+    display: none; } }
 
 .back-button {
   position: fixed;
@@ -91,11 +94,20 @@ body {
 
 .section {
   padding: 50px 0; }
+  @media screen and (max-width: 540px) {
+    .section {
+      padding: 10px; } }
   .section .section-content {
     padding: 40px; }
+    @media screen and (max-width: 540px) {
+      .section .section-content {
+        padding: 0px; } }
   .section .section-column a img {
     width: 100%;
     padding: 20px; }
+    @media screen and (max-width: 540px) {
+      .section .section-column a img {
+        padding: 10px; } }
   .section#section-contact .text-contact {
     padding: 80px; }
     .section#section-contact .text-contact .contact-mail {
@@ -203,35 +215,9 @@ body {
     @media screen and (max-width: 540px) {
       #aside .aside-nav {
         display: none; } }
-  #aside .aside-bottom {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding-bottom: 10px; }
-    #aside .aside-bottom a {
-      background-color: grey;
-      color: white;
-      text-decoration: none;
-      border-radius: 50%;
-      width: 32px;
-      height: 34px;
-      text-align: center;
-      line-height: 34px; }
-      #aside .aside-bottom a.fa-facebook:hover {
-        background: #3B5998;
-        color: white; }
-      #aside .aside-bottom a.fa-twitter:hover {
-        background: #55ACEE;
-        color: white; }
-      #aside .aside-bottom a.fa-instagram:hover {
-        background: #ff6666;
-        color: white; }
-      #aside .aside-bottom a.fa-linkedin:hover {
-        background: #007bb5;
-        color: white; }
-    @media screen and (max-width: 540px) {
-      #aside .aside-bottom {
-        display: none; } }
+  @media screen and (max-width: 540px) {
+    #aside .aside-bottom {
+      display: none; } }
 
 .slider {
   width: 600px;
@@ -248,5 +234,32 @@ body {
   justify-content: center;
   text-align: center;
   background-color: bisque; }
+
+.socials {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-bottom: 10px; }
+  .socials a {
+    background-color: grey;
+    color: white;
+    text-decoration: none;
+    border-radius: 50%;
+    width: 34px;
+    height: 34px;
+    text-align: center;
+    line-height: 35px; }
+    .socials a.fa-facebook:hover {
+      background: #3B5998;
+      color: white; }
+    .socials a.fa-twitter:hover {
+      background: #55ACEE;
+      color: white; }
+    .socials a.fa-instagram:hover {
+      background: #ff6666;
+      color: white; }
+    .socials a.fa-linkedin:hover {
+      background: #007bb5;
+      color: white; }
 
 /*# sourceMappingURL=main.css.map */
