@@ -28,6 +28,10 @@
         align-items: center;
         justify-content: center;
 
+        @media screen and (min-width: $mobile-width) {
+            height: 1600px;
+        }
+
         p {
             text-align: center;
             color: #555;
@@ -37,9 +41,6 @@
             padding: 10px;
             z-index: 2;
 
-            @media screen and (min-width: $mobile-width) {
-                margin-left: -$aside-width;
-            }
             @media screen and (min-width: $small-width) {
                 font-size: 1.3em;
             }

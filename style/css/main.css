@@ -24,10 +24,14 @@ body {
   100% {
     top: -60px;
     right: -50px; } }
+
 .page-home .jumbotron {
   display: flex;
   align-items: center;
   justify-content: center; }
+  @media screen and (min-width: 540px) {
+    .page-home .jumbotron {
+      height: 1600px; } }
   .page-home .jumbotron p {
     text-align: center;
     color: #555;
@@ -36,9 +40,6 @@ body {
     border-radius: 5px;
     padding: 10px;
     z-index: 2; }
-    @media screen and (min-width: 540px) {
-      .page-home .jumbotron p {
-        margin-left: -220px; } }
     @media screen and (min-width: 720px) {
       .page-home .jumbotron p {
         font-size: 1.3em; } }
@@ -50,6 +51,7 @@ body {
       padding-top: 240px;
       padding-bottom: 30px;
       display: block; } }
+
 .page-home .home-img {
   position: absolute;
   display: none;
@@ -78,6 +80,7 @@ body {
     .page-home .home-img.animate {
       animation: imgHomeAnimation 3s forwards;
       display: inline; } }
+
 @media screen and (min-width: 540px) {
   .page-home .section-content .socials {
     display: none; } }
@@ -279,5 +282,3 @@ body {
     .socials a.fa-linkedin-in:hover {
       background: #007bb5;
       color: white; }
-
-/*# sourceMappingURL=main.css.map */
