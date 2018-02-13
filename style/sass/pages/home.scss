@@ -41,6 +41,10 @@
             padding: 10px;
             z-index: 2;
 
+            @media screen and (min-width: $mobile-width) {
+                margin-left: -$aside-width;
+            }
+
             @media screen and (min-width: $small-width) {
                 font-size: 1.3em;
             }
