@@ -63,14 +63,11 @@
             margin: 40px;
             font-size: 1em;
             color: dimgray;
-            
-            &:hover {
-
-            }
 
             @media screen and (max-width: $mobile-width) {
                 margin: 10px;
             }
         }
+
     }
 }

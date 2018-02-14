@@ -285,3 +285,17 @@ body {
     .socials a.fa-linkedin-in:hover {
       background: #007bb5;
       color: white; }
+
+.popover {
+  display: flex;
+  flex-direction: row;
+  padding-left: 100px;
+  padding-top: 30px;
+  text-align: justify; }
+  .popover:hover .icon {
+    color: bisque; }
+  .popover .caption {
+    opacity: 0;
+    padding-top: 20px; }
+  .popover:hover .caption {
+    opacity: 1; }
