@@ -2,30 +2,43 @@
   //background-color: #007bb5;
   display: flex;
   flex-direction: row;
-  padding-left: 100px;
-  padding-top: 30px;
-  text-align: justify;
+  justify-content: center
+;
+
+  @media screen and (min-width: $mobile-width) {
+    height: 300px;
+  }
 
 
+
+  .icon {
+    //background-color: #5bc0de;
+    display: flex;
+    justify-content: space-around;
+    width: 70px;
+
+    @media screen and (min-width: $mobile-width) {
+      padding: 20px;
+
+    }
+  }
 
   &:hover .icon {
-    color:bisque;
-
+    color: bisque;
 
   }
 
   .caption {
+    display: flex;
+    //background-color: #5bc0de;
     opacity: 0;
-    padding-top: 20px;
+    justify-content: space-around;
+    margin: auto;
 
   }
 
   &:hover .caption {
     opacity: 1;
 
-
-
   }
-
-
 }
