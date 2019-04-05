@@ -126,7 +126,6 @@ body {
     padding: 80px; }
     .section#section-contact .text-contact .contact-mail {
       text-decoration: none;
-      background-color: lightgreen;
       border-radius: 10%; }
   .section#section-about .p-about {
     text-align: justify;
@@ -257,7 +256,8 @@ body {
   display: block;
   justify-content: center;
   text-align: center;
-  background-color: bisque; }
+  background-color: black;
+  color: whitesmoke; }
 
 .socials {
   display: flex;
@@ -296,7 +296,8 @@ body {
   .popover .icon {
     display: flex;
     justify-content: space-around;
-    width: 70px; }
+    width: 70px;
+    font-size: 2em; }
     @media screen and (min-width: 540px) {
       .popover .icon {
         padding: 20px; } }
