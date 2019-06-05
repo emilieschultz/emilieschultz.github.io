@@ -14,6 +14,7 @@
         text-align: center;
         line-height: 35px;
 
+
         &.fa-facebook-f:hover {
             background: #3B5998;
             color: white;
@@ -23,11 +24,12 @@
             background: #55ACEE;
             color: white;
         }
+
         &.fa-instagram:hover {
             background: lighten(red, 20);
-            ;
             color: white;
         }
+
         &.fa-linkedin-in:hover {
             background: #007bb5;
             color: white;
